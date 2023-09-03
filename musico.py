@@ -1,6 +1,5 @@
 from instrumento import Instrumento
-from flauta import Flauta
-from guitarra import Guitarra
+from instrumentos import *
 import random
 class Musico():
     def __init__(self):

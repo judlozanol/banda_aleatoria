@@ -1,6 +1,4 @@
 from musico import Musico
-from flauta import Flauta
-from guitarra import Guitarra
 import random
 
 class Banda():
