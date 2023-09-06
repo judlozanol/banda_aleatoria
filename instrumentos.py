@@ -53,3 +53,8 @@ class Tambor(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Tambor"
+        
+class Charrasca(Instrumento):
+    def __init__(self):
+        self.afina=False
+        self.nombre="Charrasca"

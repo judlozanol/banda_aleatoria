@@ -2,7 +2,7 @@ from musico import Musico
 import random
 class Banda():
     def __init__(self):
-        self.numero_musicos= random.randint(1,10)
+        self.numero_musicos= random.randint(1,100)
         self.musicos =[]
     def generar_musicos(self):     
         for i in range(self.numero_musicos):
