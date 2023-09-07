@@ -1,8 +1,5 @@
 from tkinter import *
-def generar_canva(x,y):
-    canva=Canvas(width=x,height=y, bg="white")
-    canva.pack()
-    return canva
+
 ventana= Tk()
 ventana.title("Banda Aleatoria")
 ventana.geometry("800x600")
@@ -15,7 +12,8 @@ titulo.pack(pady=25)
 generar= Button(ventana, text="Generar Banda", fg="black",font=("Helvetica",20) )
 generar.pack(pady=5)
 
-instrumentos=generar_canva(400, 300)
+instrumentos=Canvas(width=400,height=300, bg="white")
+instrumentos.pack()
 
 afinar= Button(ventana, text="Afinar Banda", fg="black",font=("Helvetica",10) )
 afinar.place(x=250, y=525)
