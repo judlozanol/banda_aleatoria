@@ -1,17 +1,19 @@
 from tkinter import *
 from banda import Banda
 from imagen import Imagen
-def generar_banda(ventana):
+def generar_banda(ventana: type[Canvas]):
     p=Banda()
     p.generar_musicos()
-    x=8
-    y=10
+    x=10
+    y=8
     for i in range(p.numero_musicos):
-        img= Imagen(ventana, x, y, p.musicos[i])
-        x+=58
-        if x>=298:
-            x=8
-            y+=195
+        img= Imagen(x, y, p.musicos[i])
+        print(img.direccion_imagen)
+        img.asignar_imagen(ventana)
+        y+=58
+        if y>=298:
+            y=8
+            x+=195
 
 ventana= Tk()
 ventana.title("Banda Aleatoria")
@@ -22,12 +24,11 @@ ventana.resizable(False, False)
 titulo= Label(ventana, text="Banda Aleatoria", fg="dark green", font=("Helvetica",50))
 titulo.pack(pady=25)
 
-generar= Button(ventana, text="Generar Banda", fg="black",font=("Helvetica",20), command=generar_banda)
-generar.pack(pady=5)
-
 instrumentos=Canvas(width=400,height=300, bg="white")
 instrumentos.pack()
 
+generar= Button(ventana, text="Generar Banda", fg="black",font=("Helvetica",20), command= lambda: generar_banda(instrumentos))
+generar.pack(pady=5)
 
 
 afinar= Button(ventana, text="Afinar Banda", fg="black",font=("Helvetica",10) )
