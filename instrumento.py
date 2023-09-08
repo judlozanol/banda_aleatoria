@@ -2,7 +2,7 @@ class Instrumento():
     def __init__(self):
         self.nombre= str
         self.afina= bool
-        self.imagen=str
+        self.memoria=str
     def afinar(self):
         if self.afina==False:
             return 0
