@@ -1,7 +1,7 @@
 from tkinter import *
 from banda import Banda
 from imagen import Imagen
-def generar_banda(ventana: type[Canvas]):
+def generar_banda(widget: type[Canvas]):
     p=Banda()
     p.generar_musicos()
     x=10
@@ -9,7 +9,8 @@ def generar_banda(ventana: type[Canvas]):
     for i in range(p.numero_musicos):
         img= Imagen(x, y, p.musicos[i])
         print(img.direccion_imagen)
-        img.asignar_imagen(ventana)
+        img.asignar_imagen(widget)
+        img.place_imagen()
         y+=58
         if y>=298:
             y=8

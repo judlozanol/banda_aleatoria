@@ -3,61 +3,61 @@ class Flauta(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Flauta"
-        self.imagen="lauta.gif"
+        self.imagen="flauta.png"
 
 class Guitarra(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Guitarra"
-        self.imagen="guitarra.gif"
+        self.imagen="guitarra.png"
 
 class Clarinete(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Clarinete"
-        self.imagen="clarinete.gif"
+        self.imagen="clarinete.png"
 class Trompeta(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Trompeta"
-        self.imagen="ompeta.gif"
+        self.imagen="trompeta.png"
 class Tuba(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Tuba"
-        self.imagen="uba.gif"
+        self.imagen="tuba.png"
 class Violonchelo(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Violonchelo"
-        self.imagen="iolonchelo.gif"
+        self.imagen="violonchelo.png"
 class Fagot(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Fagot"
-        self.imagen="got.gif"
+        self.imagen="fagot.png"
 class Maracas(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Maracas"
-        self.imagen="maracas.gif"
+        self.imagen="maracas.png"
 class Claves(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Claves"
-        self.imagen="claves.gif"
+        self.imagen="claves.png"
 class Redoblante(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Redoblante"
-        self.imagen="edoblantes.gif"
+        self.imagen="redoblantes.png"
 class Tambor(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Tambor"
-        self.imagen="mbor.gif"
+        self.imagen="tambor.png"
 class Charrasca(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Charrasca"
-        self.imagen="charrasca.gif"
+        self.imagen="charrasca.png"

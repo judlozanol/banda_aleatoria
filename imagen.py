@@ -7,6 +7,12 @@ class Imagen:
         self.direccion_imagen= musico.instrumento.imagen
         self.x=x1
         self.y=y1
+        self.img: type[PhotoImage]
+        self.lbl_img: type[Label]
     def asignar_imagen(self,ventana: type[Canvas]):
         self.img= PhotoImage(file=self.direccion_imagen)
-        Label(ventana, image=self.img).place(x=self.x,y=self.y)
+        self.lbl_img= Label(ventana, image=self.img)
+        
+    def place_imagen(self):
+        self.lbl_img.place(x=self.x,y=self.y)
+        
