@@ -3,61 +3,61 @@ class Flauta(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Flauta"
-        self.imagen="Imagenes\lauta.png"
+        self.imagen="lauta.png"
 
 class Guitarra(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Guitarra"
-        self.imagen="Imagenes\guitarra.png"
+        self.imagen="guitarra.png"
 
 class Clarinete(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Clarinete"
-        self.imagen="Imagenes\clarinete.png"
+        self.imagen="clarinete.png"
 class Trompeta(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Trompeta"
-        self.imagen="Imagenes\ompeta.png"
+        self.imagen="ompeta.png"
 class Tuba(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Tuba"
-        self.imagen="Imagenes\uba.png"
+        self.imagen="uba.png"
 class Violonchelo(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Violonchelo"
-        self.imagen="Imagenes\iolonchelo.png"
+        self.imagen="iolonchelo.png"
 class Fagot(Instrumento):
     def __init__(self):
         self.afina=True
         self.nombre="Fagot"
-        self.imagen="Imagenes\got.png"
+        self.imagen="got.png"
 class Maracas(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Maracas"
-        self.imagen="Imagenes\maracas.png"
+        self.imagen="maracas.png"
 class Claves(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Claves"
-        self.imagen="Imagenes\claves.png"
+        self.imagen="claves.png"
 class Redoblante(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Redoblante"
-        self.imagen="Imagenes\edoblantes.png"
+        self.imagen="edoblantes.png"
 class Tambor(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Tambor"
-        self.imagen="Imagenes\mbor.png"
+        self.imagen="mbor.png"
 class Charrasca(Instrumento):
     def __init__(self):
         self.afina=False
         self.nombre="Charrasca"
-        self.imagen="Imagenes\charrasca.png"
+        self.imagen="charrasca.png"
