@@ -9,5 +9,4 @@ class Imagen:
         self.y=y1
     def asignar_imagen(self,ventana: type[Canvas]):
         self.img= PhotoImage(file=self.direccion_imagen)
-        self.lbl_img= Label(ventana, image=self.img)
-        self.lbl_img.place(x=self.x,y=self.y)
+        Label(ventana, image=self.img).place(x=self.x,y=self.y)
