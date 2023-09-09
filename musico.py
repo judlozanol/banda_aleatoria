@@ -8,6 +8,6 @@ class Musico():
         instrumentos=[Flauta(),Charrasca(), Guitarra(), Clarinete(), Trompeta(), Tuba(), Violonchelo(), Fagot(), Maracas(), Claves(), Redoblante(), Tambor()]
         self.instrumento=random.choice(instrumentos)
     def afinar_instrumento(self):
-        self.instrumento.afinar()
+        return self.instrumento.afinar()
     def tocar_instrumento(self):
-        self.instrumento.tocar()
+        return self.instrumento.tocar()

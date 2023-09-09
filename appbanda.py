@@ -14,7 +14,7 @@ class AppBanda:
         self.banda= Banda()
     def destruir_labels(self,listalabel: type[list]):
         for i in range(len(listalabel)):
-            listalabel[i].after(10, listalabel[i].destroy)
+            listalabel[i].after(0, listalabel[i].destroy)
     def colocar_labels(self):
         global imagen
         global imagenes

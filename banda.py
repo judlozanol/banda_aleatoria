@@ -14,7 +14,9 @@ class Banda():
         self.creada=True
     def afinar_instrumentos(self):
         for i in range(self.numero_musicos):
-            self.musicos[i].afinar_instrumento()
+            a=self.musicos[i].afinar_instrumento()
+            if a!=None:
+                print(a)
     def tocar_instrumentos(self):
         for i in range(self.numero_musicos):
-            self.musicos[i].tocar_instrumento()
+            print(self.musicos[i].tocar_instrumento())

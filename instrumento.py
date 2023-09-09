@@ -5,8 +5,8 @@ class Instrumento():
         self.memoria=str
     def afinar(self):
         if self.afina==False:
-            return 0
+            return None
         else:
-            print("Afinando "+ self.nombre+"...")
+            return("Afinando "+ self.nombre+"...")
     def tocar(self):
-        print("Tocando "+ self.nombre+"...")
+            return("Tocando "+ self.nombre+"...")
