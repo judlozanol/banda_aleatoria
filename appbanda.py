@@ -49,9 +49,9 @@ class AppBanda:
             y1=8
             for i in range(self.banda.numero_musicos):
                 if self.banda.musicos[i].afinar_instrumento()==None:
-                    label= Label(self.canva,text=" ")
+                    label= Label(self.canva,text=" ", fg="black",font=("Helvetica",10), bg="white")
                 else:
-                    label= Label(self.canva,text=self.banda.musicos[i].afinar_instrumento())
+                    label= Label(self.canva,text=self.banda.musicos[i].afinar_instrumento(),fg="black",font=("Helvetica",10), bg="white")
                 self.labels_texto.append(label)
                 self.labels_texto[i].place(x=x1, y=y1)
                 y1+=58
@@ -66,7 +66,8 @@ class AppBanda:
         elif self.banda.afinada==False:
             messagebox.showinfo("Tocar Instrumentos", "Afine la banda antes de tocar los instrumentos")
         else:
-            messagebox.showinfo("Hola", "Hola Causa")
+            for i in range(len(self.labels_texto)):
+                self.labels_texto[i].config(text=self.banda.musicos[i].tocar_instrumento())
     def ejecutar(self):
         self.ventana.geometry("800x600")
         self.ventana.title("Banda Aleatoria")
