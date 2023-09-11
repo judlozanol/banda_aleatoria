@@ -48,7 +48,7 @@ class AppBanda:
             x1=70
             y1=8
             for i in range(self.banda.numero_musicos):
-                label= Label(self.canva,text=self.banda.musicos[i].afinar_instrumento(),fg="black",font=("Helvetica",10), bg="white")
+                label= Label(self.canva,text=self.banda.musicos[i].afinar_instrumento(),fg="black",font=("Helvetica",8), bg="white")
                 self.labels_texto.append(label)
                 self.labels_texto[i].place(x=x1, y=y1)
                 y1+=58
